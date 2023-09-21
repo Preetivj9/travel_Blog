@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            button{
+                height: 6%;
+                width: 10%;
+                border-radius: 10%;
+                background-color: blueviolet;
+                color: aliceblue;
+                position: fixed;
+            }
+            a{
+                text-decoration: none;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+<body>
+<h1>User Data</h1>
+<ul>
+{% for x in myuser %}
+<li>FirstName :{{x.firstname}} <br>
+
+LastName :{{x.lastname}} <br>
+Email :{{x.email}} <br>
+Subject :{{x.subject}} <br>
+Description :{{x.description}}</li>
+{% endfor %}
+</ul>
+
+<button ><a href="/index">Home</a></button> 
+</body>
+</html>
